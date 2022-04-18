@@ -1,0 +1,140 @@
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body section {
+  height: 100vh;
+  width: 100vw;
+}
+
+body section .leiloes {
+  height: 100vh;
+  width: 100%;
+  padding-top: 15rem !important;
+  padding: 0 5rem;
+  padding-bottom: 3rem;
+  overflow: hidden;
+}
+
+body section .leiloes .itens {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 2.5rem;
+}
+
+body section .leiloes .card {
+  width: 30rem;
+  height: 35rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9326ffbd), to(#8a92ff));
+  background: linear-gradient(180deg, #9326ffbd, #8a92ff);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+body section .leiloes .card img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  pointer-events: none;
+}
+
+body section .leiloes .card .desc {
+  margin-top: 0.5rem;
+}
+
+body section .leiloes .card .desc .title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+body section .leiloes .card .desc .description {
+  margin-top: 0.3rem;
+  font-size: 1.4rem;
+  text-align: justify;
+  color: #e1e1e1;
+  padding: 0.25rem;
+  max-height: 10rem;
+  overflow: auto;
+}
+
+body section .leiloes .card .infos {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .leiloes .card .infos p {
+  font-size: 1.3rem;
+  color: #04070c;
+}
+
+body section .leiloes .card .infos p span {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+}
+
+body section .leiloes .card .infos button {
+  width: 10rem;
+  height: 3rem;
+  outline: none;
+  border: 0;
+  background: #2e204a;
+  color: #fff;
+  -webkit-transition: background .5s;
+  transition: background .5s;
+}
+
+body section .leiloes .card .infos button:hover {
+  background: #513686;
+  cursor: pointer;
+}
+
+@media (max-width: 1360px) {
+  .leiloes .itens {
+    -ms-grid-columns: (1fr)[3] !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 1065px) {
+  .leiloes .itens {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 740px) {
+  .leiloes .itens {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    justify-items: center;
+  }
+}
+/*# sourceMappingURL=leiloesAndamento.css.map */
