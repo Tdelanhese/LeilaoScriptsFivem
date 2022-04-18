@@ -1,0 +1,142 @@
+* {
+  user-select: none;
+}
+
+body {
+  overflow-x: hidden;
+
+  section {
+    height: 100vh;
+    width: 100vw;
+
+    .leiloes {
+      height: 100vh;
+      width: 100%;
+      padding-top: 15rem !important;
+      padding: 0 5rem;
+      padding-bottom: 3rem;
+      overflow: hidden;
+
+      .novo {
+        width: 15rem;
+        height: 3rem;
+        outline: none;
+        border: 0;
+        background: #2e204a;
+        color: #fff;
+        transition: background .5s;
+        margin-bottom: 1.5rem;
+
+        &:hover {
+            background: #513686;
+            cursor: pointer;
+        }
+      }
+
+      .itens {
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 2.5rem;
+      }
+
+      .card {
+        width: 30rem;
+        height: 35rem;
+        background: linear-gradient(180deg, #9326ffbd, #8a92ff);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        position: relative;
+
+        img {
+          width: 100%;
+          object-fit: contain;
+          pointer-events: none;
+        }
+
+        .desc {
+          margin-top: 0.5rem;
+
+          .title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+          }
+
+          .description {
+            margin-top: 0.3rem;
+            font-size: 1.4rem;
+            text-align: justify;
+            color: #e1e1e1;
+            padding: 0.25rem;
+            max-height: 10rem;
+            overflow: auto;
+
+            span {
+              font-size: 1.6rem;
+              color: rgb(255, 255, 255);
+              font-weight: 700;
+            }
+          }
+        }
+
+        .infos {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 1.5rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          button {
+            width: 8rem;
+            height: 3rem;
+            outline: none;
+            border: 0;
+            background: #2e204a;
+            color: #fff;
+            transition: background .5s;
+
+            &:hover {
+                background: #513686;
+                cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1360px)
+{
+    .leiloes {
+        .itens {
+            grid-template-columns: repeat(3, 1fr) !important;
+        }
+    }
+}
+
+@media (max-width: 1065px)
+{
+    .leiloes {
+        .itens {
+            grid-template-columns: repeat(2, 1fr) !important;
+            justify-items: center;
+        }
+    }
+}
+
+@media (max-width: 740px)
+{
+    .leiloes {
+        .itens {
+            grid-template-columns: 1fr !important;
+            justify-items: center;
+        }
+    }
+}

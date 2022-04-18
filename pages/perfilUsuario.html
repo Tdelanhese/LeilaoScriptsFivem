@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/perfilUsuario/perfil.css">
+</head>
+
+<header>
+    <nav>
+        <div class="submenu">
+            <div class="infos">
+                <ul>
+                    <li>Leilões em andamento</li>
+                    <li>Últimos leilões</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="imagem">
+                <img src="../img/ZoStore_Png.png" alt="">
+            </div>
+
+            <div class="icones">
+
+                <a href="../pages/index.html">
+                    <ion-icon href="../pages/index.html" name="apps-outline"></ion-icon>
+                </a>
+
+                <a href="../pages/login.html">
+                    <ion-icon name="person-outline"></ion-icon>
+                </a>
+
+                <a href=""></a>
+                <ion-icon name="cart-outline"></ion-icon></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <section>
+        <div class="dados-pessoais">
+            <div class="icone">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <h1>Dados Pessoais</h1>
+            </div>
+            <input type="text" id="nome" class="nome" name="nome" placeholder="Nome*">
+            <input type="text" id="Sobrenome" class="sobrenome" name="Sobrenome" placeholder="Sobrenome*">
+            <input oninput="mascaraCPF(this)" type="text" placeholder="CPF*" class="cpf">
+            <input oninput="mascaraData(this)" type="text" placeholder="Data de Nascimento*" class="data-nascimentos">
+            <select name="genero" class="genero" id="genero">
+                <option selected>Selecione</option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+                <option>Outro</option>
+            </select>
+        </div>
+
+        <div class="dados-acesso">
+            <div class="icone">
+                <ion-icon name="document-lock-outline"></ion-icon>
+                <h1>Dados de Acessos ao Site</h1>
+            </div><br>
+            <input type="text" id="email" class="email" name="email" placeholder="Diginte seu E-mail*">
+        </div>
+
+        <div class="pedidos">
+            <div class="icone">
+                <ion-icon name="document-lock-outline"></ion-icon>
+                <h1>Meus pedidos</h1>
+            </div>
+            <div class="card">
+                <img src="../img/ZoBlitzv2.png" alt="">
+
+                <div class="desc">
+                    <p class="title">Script Blitz V2</p>
+                    <p class="description">script de blitz principalmente para organizações policias terem uma maior imersão e qualidade de roleplay.</p>
+                    
+                    <div class="infos">
+                        <p><span>Ganhou ou Perdido</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/ZoBlitzv2.png" alt="">
+
+                <div class="desc">
+                    <p class="title">Script Blitz V2</p>
+                    <p class="description">script de blitz principalmente para organizações policias terem uma maior imersão e qualidade de roleplay.</p>
+                    
+                    <div class="infos">
+                        <p><span>Ganhou ou Perdido</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/ZoBlitzv2.png" alt="">
+
+                <div class="desc">
+                    <p class="title">Script Blitz V2</p>
+                    <p class="description">script de blitz principalmente para organizações policias terem uma maior imersão e qualidade de roleplay.</p>
+                    
+                    <div class="infos">
+                        <p><span>Ganhou ou Perdido</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/ZoBlitzv2.png" alt="">
+
+                <div class="desc">
+                    <p class="title">Script Blitz V2</p>
+                    <p class="description">script de blitz principalmente para organizações policias terem uma maior imersão e qualidade de roleplay.</p>
+                    
+                    <div class="infos">
+                        <p><span>Ganhou ou Perdido</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/ZoBlitzv2.png" alt="">
+
+                <div class="desc">
+                    <p class="title">Script Blitz V2</p>
+                    <p class="description">script de blitz principalmente para organizações policias terem uma maior imersão e qualidade de roleplay.</p>
+                    
+                    <div class="infos">
+                        <p><span>Ganhou ou Perdido</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="../script/jQuery.js"></script>
+<script src="../script/index.js"></script>
+<script src="../script/perfilUsuario/perfil.js"></script>
+
+</html>
