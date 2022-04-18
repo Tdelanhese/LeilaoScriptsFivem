@@ -52,20 +52,20 @@ body section .pag-login .form-login .icon-zo-store img {
   max-width: 50%;
 }
 
-body section .pag-login .form-login input[type=button], body section .pag-login .form-login input[type=submit], body section .pag-login .form-login input[type=reset] {
-  background-color: #7f27b1;
+body section .pag-login .form-login .botao {
+  background-color: #7522f1;
   border: none;
   color: #fff;
-  padding: 15px 10px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 13px;
   border-radius: 5px;
-  margin: 10px;
+  margin: 5px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  width: 40%;
+  width: 41.5%;
 }
 
 body section .pag-login .form-login form {
@@ -79,9 +79,24 @@ body section .pag-login .form-login form {
 
 body section .pag-login .form-login form .usuario, body section .pag-login .form-login form .senha {
   text-align: center;
-  margin: 10px;
+  margin: 15px;
   height: 75%;
   width: 50%;
+}
+
+body section .pag-login .form-login form .btns {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 35px;
 }
 
 body section .pag-login .esqueceu-senha {
@@ -94,11 +109,16 @@ body section .pag-login .esqueceu-senha {
   text-decoration: none;
 }
 
-body section .pag-login input[type=button]:hover, body section .pag-login input[type=submit]:hover, body section .pag-login input[type=reset]:hover {
-  background-color: rgba(52, 7, 119, 0.674);
+body section .pag-login .esqueceu-senha a {
+  color: #7522f1;
+  text-decoration: none;
 }
 
-body section .pag-login input[type=button]:active, body section .pag-login input[type=submit]:active, body section .pag-login input[type=reset]:active {
+body section .pag-login .botao:hover {
+  background-color: #5f12d3;
+}
+
+body section .pag-login .botao:active {
   -webkit-transform: scale(0.95);
   transform: scale(0.95);
 }
