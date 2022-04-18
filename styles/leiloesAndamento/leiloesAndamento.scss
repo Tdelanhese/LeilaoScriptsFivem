@@ -81,7 +81,7 @@ body {
             }
           }
 
-          button {
+          a {
             width: 10rem;
             height: 3rem;
             outline: none;
@@ -89,6 +89,11 @@ body {
             background: #2e204a;
             color: #fff;
             transition: background .5s;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.4rem;
 
             &:hover {
                 background: #513686;

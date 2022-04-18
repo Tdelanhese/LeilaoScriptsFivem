@@ -127,7 +127,7 @@ body section.home {
 
 body section.home #carouselExampleIndicators {
   height: 80%;
-  width: 90%;
+  width: 65%;
   z-index: -1;
 }
 

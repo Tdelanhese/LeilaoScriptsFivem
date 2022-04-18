@@ -1,9 +1,11 @@
 $(document).on("scroll",function() {
-    if($(document).scrollTop() < 100) {
+    console.log($(document).scrollTop())
+    
+    if($(document).scrollTop() < 100) { //QUANDO O SCROLL PASSAR DOS 100px DO TOPO
         $(".submenu").removeClass("close");
     }
 
-    if($(document).scrollTop() > 100) {
+    if($(document).scrollTop() > 100) { //QUANDO O SCROLL PASSAR DOS 100px DO TOPO
         $(".submenu").addClass("close");
     }
 });

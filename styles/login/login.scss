@@ -15,7 +15,7 @@ body{
         height: 100vh;
         width: 100vw;
 
-        .pag-login{
+        .pag-login {
             display: flex;
             align-items: center;
             flex-direction: column; 
@@ -23,74 +23,87 @@ body{
             width: 100%;
             min-height: 100%;
             padding: 20px;
-
-            .form-login{
-                border-radius: 10px 10px 10px 10px;
-                background: #2e204a;
-                width: 90%;
-                max-width: 450px;
-                padding: 0px;
-                box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+      
+            .form-login {
+              border-radius: 10px 10px 10px 10px;
+              background: #2e204a;
+              width: 90%;
+              max-width: 450px;
+              padding: 0px;
+              box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+              text-align: center;
+      
+              .icon-zo-store {
+                img {
+                  max-width: 50%;
+                }
+              }
+      
+              .botao {
+                background-color: rgb(117, 34, 241);
+                border: none;
+                color: #fff;
+                padding: 10px;
                 text-align: center;
-                
-                .icon-zo-store{
-                    img{
-                        max-width: 50%;
-                    }  
-                }
-
-                input[type=button], input[type=submit], input[type=reset] {
-                    background-color: #7f27b1;
-                    border: none;
-                    color: #fff;
-                    padding: 15px 10px;
-                    text-align:center;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    font-size: 13px;
-                    border-radius: 5px;
-                    margin: 10px;
-                    transition: all 0.3s ease-in-out;
-                    width: 40%;
-                }
-
-                form{
-                    display: grid;
-                    align-items: center;
-                    justify-items: center;
-
-                    .usuario, .senha{
-                        text-align: center;
-                        margin: 10px;
-                        height: 75%;
-                        width: 50%;
-                    }
-                }
-
-            }
-
-            .esqueceu-senha{
-                background-color: #f6f6f6;
-                border-top: 1px solid #dce8f1;
-                padding: 25px;
-                text-align: center;
-                border-radius: 0 0 10px 10px;
-                font-size: 15px;
                 text-decoration: none;
+                text-transform: uppercase;
+                font-size: 13px;
+                border-radius: 5px;
+                margin: 5px;
+                transition: all 0.3s ease-in-out;
+                width: 41.5%;
+              }
+      
+              form {
+                display: grid;
+                align-items: center;
+                justify-items: center;   
+                
+                .usuario, .senha {
+                  text-align: center;
+                  margin: 15px;
+                  height: 75%;
+                  width: 50%;
+                }
+      
+                .btns {
+                  width: 55%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-top: 10px;
+                  margin-bottom: 35px;
+                }
+              }
             }
-
-            input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-                background-color: rgba(52, 7, 119, 0.674);
+      
+            .esqueceu-senha {
+              background-color: #f6f6f6;
+              border-top: 1px solid #dce8f1;
+              padding: 25px;
+              text-align: center;
+              border-radius: 0 0 10px 10px;
+              font-size: 15px;
+              text-decoration: none;
+              
+              a {
+                color: rgb(117, 34, 241);
+                text-decoration: none;
+              }
             }
-        
-            input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
-                -moz-transform: scale(0.95);
-                -webkit-transform: scale(0.95);
-                -o-transform: scale(0.95);
-                -ms-transform: scale(0.95);
-                transform: scale(0.95);
+            
+            .botao:hover  {
+              background-color: rgb(95, 18, 211);
             }
-        }
+      
+            .botao:active  {
+              -moz-transform: scale(0.95);
+              -webkit-transform: scale(0.95);
+              -o-transform: scale(0.95);
+              -ms-transform: scale(0.95);
+              transform: scale(0.95);
+            }
+          }
     }
 }
     
