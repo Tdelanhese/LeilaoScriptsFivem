@@ -36,3 +36,33 @@ function mouseoutPass(id) {
     var obj = document.getElementById(id);
     obj.type = "password";
 }
+
+
+function cadastroUser(){
+    var senha_1 = $("#senha-1")
+    var senha_2 = $("#senha-2")
+    console.log(senha_1.val() , senha_2.val())
+
+
+
+    if (senha_1.val() != senha_2.val()){
+        return alert("Senhas necessitam ser iguais")
+    }
+
+    $.ajax({
+        type: "POST",
+        url: `https://vbmco53lae.execute-api.us-east-1.amazonaws.com/CreateUser`,
+        contentType: "application/json",
+        data: JSON.stringify({
+            nome: $("#nome").val(),
+            login: $("#email").val(),
+            senha: $("#senha-1").val(),
+        }),
+        headers: {
+            "accept": "application/json"
+        },
+        success: function(response){
+            console.log(response)
+        }
+    })
+}
