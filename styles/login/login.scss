@@ -22,20 +22,21 @@ body{
             justify-content: center;
             width: 100%;
             min-height: 100%;
-            padding: 20px;
+            padding: 2rem;
+            padding-top: 10rem;
       
             .form-login {
-              border-radius: 10px 10px 10px 10px;
+              border-radius: 1rem;
               background: #2e204a;
               width: 90%;
-              max-width: 450px;
+              max-width: 45rem;
               padding: 0px;
-              box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+              box-shadow: 0 3rem 6rem 0 rgba(0,0,0,0.3);
               text-align: center;
       
               .icon-zo-store {
                 img {
-                  max-width: 50%;
+                  height: 15rem;
                 }
               }
       
@@ -43,25 +44,25 @@ body{
                 background-color: rgb(117, 34, 241);
                 border: none;
                 color: #fff;
-                padding: 10px;
+                padding: 1rem;
                 text-align: center;
                 text-decoration: none;
                 text-transform: uppercase;
-                font-size: 13px;
-                border-radius: 5px;
-                margin: 5px;
+                font-size: 1.3rem;
+                border-radius: .5rem;
+                margin: .5rem;
                 transition: all 0.3s ease-in-out;
                 width: 41.5%;
               }
       
-              form {
+              .div-login {
                 display: grid;
                 align-items: center;
                 justify-items: center;   
                 
                 .usuario, .senha {
                   text-align: center;
-                  margin: 15px;
+                  margin: 1.5rem;
                   height: 75%;
                   width: 50%;
                 }
@@ -71,19 +72,19 @@ body{
                   display: flex;
                   align-items: center;
                   justify-content: center;
-                  margin-top: 10px;
-                  margin-bottom: 35px;
+                  margin-top: 1rem;
+                  margin-bottom: 3.5rem;
                 }
               }
             }
       
             .esqueceu-senha {
               background-color: #f6f6f6;
-              border-top: 1px solid #dce8f1;
-              padding: 25px;
+              border-top: .1rem solid #dce8f1;
+              padding: 2.5rem;
               text-align: center;
-              border-radius: 0 0 10px 10px;
-              font-size: 15px;
+              border-radius: 0 0 1rem 1rem;
+              font-size: 1.5rem;
               text-decoration: none;
               
               a {

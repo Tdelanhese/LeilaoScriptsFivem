@@ -34,41 +34,42 @@ body section .pag-login {
           justify-content: center;
   width: 100%;
   min-height: 100%;
-  padding: 20px;
+  padding: 2rem;
+  padding-top: 10rem;
 }
 
 body section .pag-login .form-login {
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 1rem;
   background: #2e204a;
   width: 90%;
-  max-width: 450px;
+  max-width: 45rem;
   padding: 0px;
-  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 3rem 6rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3rem 6rem 0 rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
 body section .pag-login .form-login .icon-zo-store img {
-  max-width: 50%;
+  height: 15rem;
 }
 
 body section .pag-login .form-login .botao {
   background-color: #7522f1;
   border: none;
   color: #fff;
-  padding: 10px;
+  padding: 1rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 13px;
-  border-radius: 5px;
-  margin: 5px;
+  font-size: 1.3rem;
+  border-radius: .5rem;
+  margin: .5rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 41.5%;
 }
 
-body section .pag-login .form-login form {
+body section .pag-login .form-login .div-login {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -77,14 +78,14 @@ body section .pag-login .form-login form {
   justify-items: center;
 }
 
-body section .pag-login .form-login form .usuario, body section .pag-login .form-login form .senha {
+body section .pag-login .form-login .div-login .usuario, body section .pag-login .form-login .div-login .senha {
   text-align: center;
-  margin: 15px;
+  margin: 1.5rem;
   height: 75%;
   width: 50%;
 }
 
-body section .pag-login .form-login form .btns {
+body section .pag-login .form-login .div-login .btns {
   width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,17 +96,17 @@ body section .pag-login .form-login form .btns {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 35px;
+  margin-top: 1rem;
+  margin-bottom: 3.5rem;
 }
 
 body section .pag-login .esqueceu-senha {
   background-color: #f6f6f6;
-  border-top: 1px solid #dce8f1;
-  padding: 25px;
+  border-top: .1rem solid #dce8f1;
+  padding: 2.5rem;
   text-align: center;
-  border-radius: 0 0 10px 10px;
-  font-size: 15px;
+  border-radius: 0 0 1rem 1rem;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 

@@ -36,3 +36,15 @@ function mouseoutPass(id) {
     var obj = document.getElementById(id);
     obj.type = "password";
 }
+
+$(document).ready(() => {
+    var user = window.localStorage.getItem("user")
+    user = JSON.parse(user)
+
+    if(!user) {
+        window.location.pathname = "/pages/login.html"
+    }
+
+    $("#nome").val(user?.nome)
+    $("#email").val(user?.login)
+})
