@@ -58,8 +58,11 @@ async function cadastroUser() {
             contentType: "application/json",
             data: JSON.stringify({
                 nome: $("#nome").val(),
+                sobrenome: $("#sobrenome").val(),
+                dataNascimento: $("#data-nascimentos").val(),
+                cpf: $("#cpf").val(),
                 login: $("#email").val(),
-                senha: $("#senha-1").val(),
+                senha: $("#senha-1").val()
             }),
             headers: {
                 "accept": "application/json"

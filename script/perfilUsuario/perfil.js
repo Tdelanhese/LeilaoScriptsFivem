@@ -46,5 +46,8 @@ $(document).ready(() => {
     }
 
     $("#nome").val(user?.nome)
+    $("#sobrenome").val(user?.sobrenome)
     $("#email").val(user?.login)
+    $("#data-nascimentos").val(user?.dataNascimento)
+    $("#cpf").val(user?.cpf)
 })
