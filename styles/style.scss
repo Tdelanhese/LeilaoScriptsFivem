@@ -17,78 +17,9 @@ header {
   background: transparent;
   z-index: 1;
 
-  nav {
+  iframe {
+    width: 100%;
     position: fixed;
-    width: 100%;
-  }
-
-  .menu {
-    background: rgb(0,5,5);
-    background: linear-gradient(130deg, rgba(0,5,5,1) 0%, rgba(82,53,128,1) 100%);
-    height: calc(12rem - 3rem);
-    padding: 0 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .imagem {
-      pointer-events: none;
-      user-select: none;
-      img{
-        max-width: 40%;
-      }
-    }
-
-    .icones{
-
-      ion-icon {
-        font-size: 3rem;
-        color: #fff;
-        padding: 7px;
-        cursor:pointer;
-      }
-    }
-  }
-
-  .submenu {
-    width: 100%;
-    height: 3rem;
-    background-color: #4f0292;
-    padding: 0 5rem;
-    transition: all .5s !important;
-    opacity: 1;
-
-    .infos {
-      height: 100%;
-
-      ul {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        color: #fff;
-        list-style: none;
-
-        li {
-          text-transform: uppercase;
-          margin: 0 1rem;
-
-          a {
-            text-decoration: none;
-            color: #fff;
-          }
-        }
-      }
-    }
-
-    &.close {
-      .infos {
-        display: none;
-      }
-
-      height: 0;
-      opacity: 0;
-    }
-
   }
 }
 

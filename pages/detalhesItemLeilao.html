@@ -13,34 +13,13 @@
 </head>
 
     <header>
-        <nav>
-        <div class="submenu">
-            <div class="infos">
-            <ul>
-                <li><a href="../pages/leiloesAndamento.html">Leilões em Andamento</a></li>
-                <li>Últimos leilões</li>
-            </ul>
-            </div>
-        </div>
-
-        <div class="menu">
-            <div class="imagem">
-                <img src="../img/ZoStore_Png.png" alt="">
-            </div>
-            
-            <div class="icones">
-                <a href="../pages/index.html"><ion-icon href="../pages/index.html" name="apps-outline"></ion-icon></a>
-
-                <a href="../pages/login.html"><ion-icon name="person-outline"></ion-icon></a>
-            </div>
-        </div>
-        </nav>
+        <iframe src="../components/menu/menu.html" frameborder="0"></iframe>
     </header>
 
     <body>        
         <section>
             <div class="item-detalhes">
-                <div class="card">
+                <!-- <div class="card">
                     <img src="../img/ZoBlitzv2.png" alt="">
 
                     <div class="desc">
@@ -50,14 +29,15 @@
                         </div>
                         
                         <div class="infos">
+                            <input type="number" id="valor-lance">
                             <button>Dar Lance</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     </body>
-    
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>   
+
+    <script src="../script/jQuery.js"></script>
+    <script src="../script/detalhesItemLeilao/detalhes.js"></script>
 </html>

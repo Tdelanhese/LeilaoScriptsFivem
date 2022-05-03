@@ -35,6 +35,12 @@ body {
                 }
             }
 
+            input {
+                height: 3rem;
+                width: 15rem;
+                padding: 0 1rem;
+            }
+
             .card {
                 display: flex;
                 width: 100%;
@@ -68,7 +74,6 @@ body {
                         text-align: justify;
                         color: #e1e1e1;
                         padding: 0.25rem;
-                        max-height: 10rem;
                         overflow: auto;
             
                         span {

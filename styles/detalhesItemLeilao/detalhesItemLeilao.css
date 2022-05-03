@@ -48,6 +48,12 @@ body section .item-detalhes button:hover {
   cursor: pointer;
 }
 
+body section .item-detalhes input {
+  height: 3rem;
+  width: 15rem;
+  padding: 0 1rem;
+}
+
 body section .item-detalhes .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,7 +100,6 @@ body section .item-detalhes .card .desc .description {
   text-align: justify;
   color: #e1e1e1;
   padding: 0.25rem;
-  max-height: 10rem;
   overflow: auto;
 }
 

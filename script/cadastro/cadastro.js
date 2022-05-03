@@ -54,7 +54,7 @@ async function cadastroUser() {
 
         $.ajax({
             type: "POST",
-            url: `https://vbmco53lae.execute-api.us-east-1.amazonaws.com/CreateUser`,
+            url: `https://vbmco53lae.execute-api.us-east-1.amazonaws.com/api_leilao/user`,
             contentType: "application/json",
             data: JSON.stringify({
                 nome: $("#nome").val(),
@@ -68,17 +68,20 @@ async function cadastroUser() {
                 "accept": "application/json"
             },
             success: function (response) {
-                console.log(response)
+                if(response.statusCode == 200) {
+                    return alert("Cadastro realizado com sucesso!")
+                }
+
+                return alert(response.body)
             }
         })
     })
 }
 
 function verificarLogin(login) {
-
     return $.ajax({
         type: "GET",
-        url: `https://vbmco53lae.execute-api.us-east-1.amazonaws.com/getUsers?login=${login}`,
+        url: `https://vbmco53lae.execute-api.us-east-1.amazonaws.com/api_leilao/user?login=${login}`,
         headers: {
             "accept": "application/json",
         },

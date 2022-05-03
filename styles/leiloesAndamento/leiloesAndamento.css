@@ -99,7 +99,7 @@ body section .leiloes .card .infos p span {
   font-weight: 700;
 }
 
-body section .leiloes .card .infos a {
+body section .leiloes .card .infos button {
   width: 10rem;
   height: 3rem;
   outline: none;
@@ -121,7 +121,7 @@ body section .leiloes .card .infos a {
   font-size: 1.4rem;
 }
 
-body section .leiloes .card .infos a:hover {
+body section .leiloes .card .infos button:hover {
   background: #513686;
   cursor: pointer;
 }

@@ -16,11 +16,15 @@ function verificarLogin() {
 
     $.ajax({
         type: "GET",
-        url: `https://vbmco53lae.execute-api.us-east-1.amazonaws.com/getUsers?login=${login}`,
+        url: `https://vbmco53lae.execute-api.us-east-1.amazonaws.com/api_leilao/user?login=${login}`,
         headers: {
             "accept": "application/json",
         },
         success: function (response) {
+            if(response.statusCode == 400) {
+                return alert("Login ou senha inválido!")
+            }
+
             response = JSON.parse(response.body)[0]
 
             if(response?.login == login && response?.senha == senha) {
