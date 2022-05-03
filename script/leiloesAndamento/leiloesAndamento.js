@@ -42,7 +42,7 @@ $(document).ready(() => {
 
                     localStorage.setItem("leilaoSelecionado", JSON.stringify(item));
 
-                    window.location.pathname = "/pages/detalhesItemLeilao.html"
+                    window.location.pathname = "/LeilaoScriptsFivem/pages/detalhesItemLeilao.html"
                 })
             }
         })

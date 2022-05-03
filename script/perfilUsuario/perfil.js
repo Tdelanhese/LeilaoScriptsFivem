@@ -42,7 +42,7 @@ $(document).ready(() => {
     user = JSON.parse(user)
 
     if(!user) {
-        window.location.pathname = "/pages/login.html"
+        window.location.pathname = "/LeilaoScriptsFivem/pages/login.html"
     }
 
     $("#nome").val(user?.nome)

@@ -2,7 +2,7 @@ $(document).ready(() => {
     var leilao = JSON.parse(window.localStorage.getItem("leilaoSelecionado"))
 
     if(!leilao) {
-        window.parent.location.pathname = "/pages/leiloesFinalizados.html"
+        window.parent.location.pathname = "/LeilaoScriptsFivem/pages/leiloesFinalizados.html"
     }
 
     $.ajax({

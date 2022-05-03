@@ -24,13 +24,13 @@ function redirectToLoginOrPerfil() {
     var user = window.localStorage.getItem("user")
 
     if(user) {
-        return window.parent.location.pathname = "/pages/perfilUsuario.html"
+        return window.parent.location.pathname = "/LeilaoScriptsFivem/pages/perfilUsuario.html"
     }
 
-    window.parent.location.pathname = "/pages/login.html"
+    window.parent.location.pathname = "/LeilaoScriptsFivem/pages/login.html"
 }
 
 $("#logout").click(() => {
     window.localStorage.removeItem("user")
-    window.parent.location.pathname = "/pages/login.html"
+    window.parent.location.pathname = "/LeilaoScriptsFivem/pages/login.html"
 })

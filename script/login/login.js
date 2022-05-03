@@ -30,7 +30,7 @@ function verificarLogin() {
             if(response?.login == login && response?.senha == senha) {
                 localStorage.setItem("user", JSON.stringify(response));
 
-                window.location.pathname = "/pages/perfilUsuario.html"
+                window.location.pathname = "/LeilaoScriptsFivem/pages/perfilUsuario.html"
             }
         }
     })
